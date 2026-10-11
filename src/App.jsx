@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { GarageProvider } from "./context/GarageContext";
 import Dashboard from "./pages/Dashboard";
 import Rentals from "./pages/Rentals";
@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 function App() {
   return (
     <GarageProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           {/* Main Dashboard view */}
           <Route path="/" element={<Dashboard />} />
@@ -24,7 +24,7 @@ function App() {
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </GarageProvider>
   );
 }
