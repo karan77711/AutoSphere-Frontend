@@ -89,12 +89,12 @@ export default function VehicleLibraryModal({ isOpen, onClose }) {
                 {/* Real-Life Vehicle Photo on Top */}
                 <div className="card-photo-wrapper" style={{ height: "150px" }}>
                   <img
-                    src={item.image || `/vehicles/${item.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
+                    src={item.image || `${import.meta.env.BASE_URL}vehicles/${item.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
                     alt={item.displayName}
                     className="card-photo-img"
                     loading="lazy"
                     onError={(e) => {
-                      e.target.src = `/vehicles/${item.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
+                      e.target.src = `${import.meta.env.BASE_URL}vehicles/${item.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
                     }}
                   />
                   <div className="card-photo-gradient" />

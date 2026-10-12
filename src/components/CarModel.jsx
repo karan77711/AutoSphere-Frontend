@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function CarModel(props) {
-  const { scene } = useGLTF("/models/suzuki_swift.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/suzuki_swift.glb`);
 
   // ✅ Rotate the car slowly
   useFrame((state, delta) => {

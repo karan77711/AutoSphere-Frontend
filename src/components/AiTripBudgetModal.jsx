@@ -286,11 +286,11 @@ export default function AiTripBudgetModal({ isOpen, onClose, onOpenBookModal }) 
             {/* Real Vehicle Photography Banner */}
             <div className="relative rounded-xl overflow-hidden mb-3 bg-slate-950 border border-slate-800" style={{ height: "160px" }}>
               <img
-                src={topPick.vehicle.image || `/vehicles/${topPick.vehicle.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
+                src={topPick.vehicle.image || `${import.meta.env.BASE_URL}vehicles/${topPick.vehicle.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
                 alt={topPick.vehicle.displayName}
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.target.src = `/vehicles/${topPick.vehicle.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
+                  e.target.src = `${import.meta.env.BASE_URL}vehicles/${topPick.vehicle.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
                 }}
               />
               <div className="card-photo-gradient" style={{ height: "50px" }} />

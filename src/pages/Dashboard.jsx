@@ -584,12 +584,12 @@ export default function Dashboard() {
                     {/* Real-Life Vehicle Photo on Top */}
                     <div className="card-photo-wrapper">
                       <img
-                        src={v.image || `/vehicles/${v.name.includes("bike") || v.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
+                        src={v.image || `${import.meta.env.BASE_URL}vehicles/${v.name.includes("bike") || v.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
                         alt={v.displayName}
                         className="card-photo-img"
                         loading="lazy"
                         onError={(e) => {
-                          e.target.src = `/vehicles/${v.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
+                          e.target.src = `${import.meta.env.BASE_URL}vehicles/${v.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
                         }}
                       />
                       <div className="card-photo-gradient" />

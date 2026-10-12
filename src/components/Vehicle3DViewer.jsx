@@ -208,7 +208,7 @@ function JimnyWheel({ position, isLeft = false, isSpare = false }) {
 
 // 1. ACTUAL MARUTI SUZUKI JIMNY JB74 4x4 MODEL (1700 Meshes + Full All-Terrain Wheels)
 function PhotorealisticSuzukiJimny({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/suzuki_jimny.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/suzuki_jimny.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -294,7 +294,7 @@ function PhotorealisticSuzukiJimny({ color = "#dc2626", headlightsOn = true, sca
 
 // 2. ACTUAL MAHINDRA THAR 4x4 MODEL (Full Model with Factory Wheels, Grille & Hardtop)
 function PhotorealisticMahindraThar({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/mahindra_thar.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/mahindra_thar.glb`);
   const paintMatsRef = useRef([]);
 
   const clonedScene = useMemo(() => {
@@ -344,7 +344,7 @@ function PhotorealisticMahindraThar({ color = "#dc2626", headlightsOn = true, sc
 
 // 3. PHOTOREALISTIC TOYOTA FORTUNER LEGENDER 4x4 (Authentic 13.8MB Model with Factory Bridgestone Wheels & Slotted Grille)
 function PhotorealisticToyotaFortuner({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/toyota_fortuner.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/toyota_fortuner.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -439,7 +439,7 @@ function PhotorealisticToyotaFortuner({ color = "#dc2626", headlightsOn = true, 
 // 4. PHOTOREALISTIC GRAND 4x4 SUV MODEL (Scorpio-N, Safari, Harrier, XUV700)
 // Heavy-duty muscular 15.4MB SUV with slotted grille, wide wheel arches, disc brakes & roof rails
 function PhotorealisticGrandSuv({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/jeep_grand_cherokee.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/jeep_grand_cherokee.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -525,7 +525,7 @@ function PhotorealisticGrandSuv({ color = "#dc2626", headlightsOn = true, scale 
 
 // 5. PHOTOREALISTIC LUXURY CROSSOVER SUV MODEL (Creta, Innova Hycross)
 function PhotorealisticLuxurySuv({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/suv_luxury.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/suv_luxury.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -607,7 +607,7 @@ function PhotorealisticLuxurySuv({ color = "#dc2626", headlightsOn = true, scale
 
 // 6. PHOTOREALISTIC COMPACT SUV MODEL (Tata Nexon EV / Brezza)
 function PhotorealisticCompactSuv({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/suv_compact.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/suv_compact.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
 
@@ -671,7 +671,7 @@ function PhotorealisticCompactSuv({ color = "#dc2626", headlightsOn = true, scal
 
 // 7. PHOTOREALISTIC MARUTI SUZUKI SWIFT SPORT MODEL (160 Meshes, Metallic Clearcoat)
 function PhotorealisticSuzukiSwift({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/suzuki_swift.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/suzuki_swift.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -761,7 +761,7 @@ function PhotorealisticSuzukiSwift({ color = "#dc2626", headlightsOn = true, sca
 
 // 8. PHOTOREALISTIC BMW M-POWER SEDAN (BMW 330Li M Sport Gran Limousine)
 function PhotorealisticBmw({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bmw_m4.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bmw_m4.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
   const tailMatsRef = useRef([]);
@@ -844,7 +844,7 @@ function PhotorealisticBmw({ color = "#dc2626", headlightsOn = true, scale = 1.0
 // 9. PHOTOREALISTIC CLASSIC ROADSTER & SCRAMBLER 2-WHEELER (Royal Enfield Classic 350, Himalayan 450, Triumph Scrambler 400X)
 // 165 Meshes, authentic wire spoke wheels, single front & single rear tyre, teardrop tank, leather saddle, chrome exhaust
 function PhotorealisticClassicEnfield({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bike_enfield_classic.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bike_enfield_classic.glb`);
   const paintMatsRef = useRef([]);
 
   const clonedScene = useMemo(() => {
@@ -903,7 +903,7 @@ function PhotorealisticClassicEnfield({ color = "#dc2626", headlightsOn = true, 
 
 // 10. PHOTOREALISTIC BMW R 1250 GS ADVENTURE 2-WHEELER (True 2-Wheeler with Spoke Wheels & ShiftCam Boxer)
 function PhotorealisticBmwBike({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bike_bmw.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bike_bmw.glb`);
   const paintMatsRef = useRef([]);
 
   const clonedScene = useMemo(() => {
@@ -958,7 +958,7 @@ function PhotorealisticBmwBike({ color = "#dc2626", headlightsOn = true, scale =
 
 // 11. PHOTOREALISTIC KAWASAKI NINJA ZX-10R / H2R 2-WHEELER (Championship Superbike with Aero Wings)
 function PhotorealisticNinjaH2R({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bike_h2r.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bike_h2r.glb`);
   const paintMatsRef = useRef([]);
 
   const clonedScene = useMemo(() => {
@@ -1005,7 +1005,7 @@ function PhotorealisticNinjaH2R({ color = "#dc2626", headlightsOn = true, scale 
 
 // 12. REAL 2-WHEELED YAMAHA SUPERBIKE / MT-15 / KTM 390 (Single Front Tire, Single Rear Tire)
 function PhotorealisticYamaha({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bike_yamaha.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bike_yamaha.glb`);
   const paintMatsRef = useRef([]);
   const headlightMatsRef = useRef([]);
 
@@ -1076,7 +1076,7 @@ function PhotorealisticYamaha({ color = "#dc2626", headlightsOn = true, scale = 
 
 // 13. REAL 2-WHEELED SUZUKI HAYABUSA 1340cc (Single Front Tire, Single Rear Tire, Dual Exhaust)
 function PhotorealisticHayabusa({ color = "#dc2626", headlightsOn = true, scale = 1.0 }) {
-  const { scene } = useGLTF("/models/bike_hayabusa.glb");
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/bike_hayabusa.glb`);
   const paintMatsRef = useRef([]);
 
   const clonedScene = useMemo(() => {
@@ -1323,19 +1323,19 @@ function StudioScene({
 }
 
 // Preload 3D Models in Background
-useGLTF.preload("/models/suzuki_jimny.glb");
-useGLTF.preload("/models/mahindra_thar.glb");
-useGLTF.preload("/models/toyota_fortuner.glb");
-useGLTF.preload("/models/jeep_grand_cherokee.glb");
-useGLTF.preload("/models/suv_luxury.glb");
-useGLTF.preload("/models/suv_compact.glb");
-useGLTF.preload("/models/suzuki_swift.glb");
-useGLTF.preload("/models/bmw_m4.glb");
-useGLTF.preload("/models/bike_hayabusa.glb");
-useGLTF.preload("/models/bike_yamaha.glb");
-useGLTF.preload("/models/bike_bmw.glb");
-useGLTF.preload("/models/bike_h2r.glb");
-useGLTF.preload("/models/bike_enfield_classic.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/suzuki_jimny.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/mahindra_thar.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/toyota_fortuner.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/jeep_grand_cherokee.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/suv_luxury.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/suv_compact.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/suzuki_swift.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bmw_m4.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bike_hayabusa.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bike_yamaha.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bike_bmw.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bike_h2r.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/bike_enfield_classic.glb`);
 
 export default function Vehicle3DViewer({
   color = "#b4b8be",

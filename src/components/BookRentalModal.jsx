@@ -2,28 +2,29 @@ import React, { useState } from "react";
 import { useGarage } from "../context/GarageContext";
 
 // Fallback high-resolution photos for each vehicle type
+const baseUrl = import.meta.env?.BASE_URL || "/";
 const VEHICLE_REAL_PHOTOS = {
-  "mahindra thar": "/vehicles/thar.jpg",
-  "toyota fortuner": "/vehicles/fortuner.jpg",
-  "mahindra scorpio": "/vehicles/scorpio.jpg",
-  "suzuki jimny": "/vehicles/jimny.jpg",
-  "tata safari": "/vehicles/safari.jpg",
-  "mahindra xuv700": "/vehicles/xuv700.jpg",
-  "toyota innova hycross": "/vehicles/hycross.jpg",
-  "tata harrier": "/vehicles/harrier.jpg",
-  "hyundai creta": "/vehicles/creta.jpg",
-  "suzuki swift": "/vehicles/swift.jpg",
-  "tata nexon ev": "/vehicles/nexon_ev.jpg",
-  "bmw 3 series": "/vehicles/bmw3.jpg",
-  "bmw 330li": "/vehicles/bmw3.jpg",
-  "royal enfield himalayan": "/vehicles/himalayan.jpg",
-  "royal enfield classic": "/vehicles/classic350.jpg",
-  "ktm 390 adventure": "/vehicles/ktm390.jpg",
-  "kawasaki ninja": "/vehicles/ninja.jpg",
-  "suzuki hayabusa": "/vehicles/hayabusa.jpg",
-  "bmw r1250gs": "/vehicles/r1250gs.jpg",
-  "triumph scrambler": "/vehicles/scrambler400.jpg",
-  "yamaha mt15": "/vehicles/mt15.jpg"
+  "mahindra thar": `${baseUrl}vehicles/thar.jpg`,
+  "toyota fortuner": `${baseUrl}vehicles/fortuner.jpg`,
+  "mahindra scorpio": `${baseUrl}vehicles/scorpio.jpg`,
+  "suzuki jimny": `${baseUrl}vehicles/jimny.jpg`,
+  "tata safari": `${baseUrl}vehicles/safari.jpg`,
+  "mahindra xuv700": `${baseUrl}vehicles/xuv700.jpg`,
+  "toyota innova hycross": `${baseUrl}vehicles/hycross.jpg`,
+  "tata harrier": `${baseUrl}vehicles/harrier.jpg`,
+  "hyundai creta": `${baseUrl}vehicles/creta.jpg`,
+  "suzuki swift": `${baseUrl}vehicles/swift.jpg`,
+  "tata nexon ev": `${baseUrl}vehicles/nexon_ev.jpg`,
+  "bmw 3 series": `${baseUrl}vehicles/bmw3.jpg`,
+  "bmw 330li": `${baseUrl}vehicles/bmw3.jpg`,
+  "royal enfield himalayan": `${baseUrl}vehicles/himalayan.jpg`,
+  "royal enfield classic": `${baseUrl}vehicles/classic350.jpg`,
+  "ktm 390 adventure": `${baseUrl}vehicles/ktm390.jpg`,
+  "kawasaki ninja": `${baseUrl}vehicles/ninja.jpg`,
+  "suzuki hayabusa": `${baseUrl}vehicles/hayabusa.jpg`,
+  "bmw r1250gs": `${baseUrl}vehicles/r1250gs.jpg`,
+  "triumph scrambler": `${baseUrl}vehicles/scrambler400.jpg`,
+  "yamaha mt15": `${baseUrl}vehicles/mt15.jpg`
 };
 
 export default function BookRentalModal({ isOpen, onClose, preselectedVehicle }) {

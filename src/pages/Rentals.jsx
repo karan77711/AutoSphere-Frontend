@@ -291,12 +291,12 @@ export default function Rentals() {
                 {/* Real-Life Vehicle Photo on Top */}
                 <div className="card-photo-wrapper">
                   <img
-                    src={car.image || `/vehicles/${car.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
+                    src={car.image || `${import.meta.env.BASE_URL}vehicles/${car.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`}
                     alt={car.displayName}
                     className="card-photo-img"
                     loading="lazy"
                     onError={(e) => {
-                      e.target.src = `/vehicles/${car.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
+                      e.target.src = `${import.meta.env.BASE_URL}vehicles/${car.type === "BIKE" ? "himalayan.jpg" : "thar.jpg"}`;
                     }}
                   />
                   <div className="card-photo-gradient" />
