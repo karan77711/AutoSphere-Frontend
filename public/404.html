@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoSphere | Vehicle Intelligence</title>
+    <script>
+      (function() {
+        var path = window.location.pathname;
+        var repo = '/AutoSphere-Frontend';
+        if (path.indexOf(repo) !== -1) {
+          var segment = path.replace(repo, '').replace(/^\/+/, '');
+          window.location.replace(repo + '/#/' + (segment || 'dashboard') + window.location.search);
+        } else {
+          var segment = path.replace(/^\/+/, '');
+          window.location.replace(repo + '/#/' + (segment || 'dashboard') + window.location.search);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p style="font-family:sans-serif;text-align:center;margin-top:20vh;color:#888;">Redirecting to AutoSphere...</p>
+  </body>
+</html>
